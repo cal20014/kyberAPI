@@ -2,7 +2,7 @@ const swaggerAutogen = require("swagger-autogen")();
 
 const doc = {
   info: {
-    title: "famFolio Docs",
+    title: "kyberAPI Docs",
     description: "API documentation for kyberData",
   },
   host: "http://localhost:8080",

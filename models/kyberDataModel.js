@@ -10,6 +10,10 @@ const kyberSchema = new mongoose.Schema({
   categoryList: [String],
 });
 
-const Kyber = mongoose.model("Kyber", kyberSchema, "kyber_data_collection");
+const kyberDataSchema = new mongoose.Schema({
+  kybers: [kyberSchema],
+});
 
-module.exports = Kyber;
+const KyberData = mongoose.model("KyberData", kyberDataSchema);
+
+module.exports = KyberData;

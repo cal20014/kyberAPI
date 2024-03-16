@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "famFolio Docs",
+    "title": "kyberAPI Docs",
     "description": "API documentation for kyberData",
     "version": "1.0.0"
   },
