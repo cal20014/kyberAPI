@@ -5,8 +5,8 @@ const doc = {
     title: "kyberAPI Docs",
     description: "API documentation for kyberData",
   },
-  host: "localhost:8080",
-  schemes: ["http"], // Using "http" for local development
+  host: "kyberapi.onrender.com",
+  schemes: ["https"], // Using "http" for local development
 };
 
 const outputFile = "./swagger.json";

@@ -5,10 +5,10 @@
     "description": "API documentation for kyberData",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "kyberapi.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/kyberData/": {
