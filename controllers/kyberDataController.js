@@ -13,21 +13,16 @@ kyberDataController.getAllKyberData = async (req, res) => {
   }
 };
 
-// GET kyberData by kyber id not mongo object id
-kyberDataController.getKyberDataByKyberId = async (req, res) => {
+// GET kyberData by id
+kyberDataController.getKyberDataById = async (req, res) => {
   try {
-    const kyberDataArray = await KyberData.find({});
-    for (let kyberData of kyberDataArray) {
-      const kyber = kyberData.kybers.find(
-        (kyber) => kyber.id === parseInt(req.params.id)
-      );
-      if (kyber) {
-        return res.json(kyber);
-      }
+    const kyberData = await KyberData.findById(req.params.id);
+    if (kyberData == null) {
+      return res.status(404).json({ message: "Cannot find kyberData" });
     }
-    return res.status(404).json({ message: "Cannot find kyber" });
-  } catch (error) {
-    res.status(500).json({ message: error.message });
+    res.json(kyberData);
+  } catch (err) {
+    return res.status(500).json({ message: err.message });
   }
 };
 

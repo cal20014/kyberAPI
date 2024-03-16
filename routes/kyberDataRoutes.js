@@ -1,18 +1,14 @@
 const express = require("express");
 const router = express.Router();
 const kyberDataController = require("../controllers/kyberDataController");
-const utilities = require("../utilities");
 
 // Routes
 
 // GET all kyberData
-router.get("/", utilities.handleErrors(kyberDataController.getAllKyberData));
+router.get("/", kyberDataController.getAllKyberData);
 
 // GET single kyberData by id
-router.get(
-  "/:id",
-  utilities.handleErrors(kyberDataController.getKyberDataByKyberId)
-);
+router.get("/:id", kyberDataController.getKyberDataById);
 
 // // POST new kyberData
 // router.post("/", utilities.handleErrors(kyberDataController.addKyberData));
