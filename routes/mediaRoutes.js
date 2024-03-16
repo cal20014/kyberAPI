@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const mediaController = require("../controllers/mediaController");
 const utilities = require("../utilities");
-const validate = require("../utilities/mediaValidator");
 
 // Routes
 

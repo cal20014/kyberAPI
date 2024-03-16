@@ -3,10 +3,10 @@ const swaggerAutogen = require("swagger-autogen")();
 const doc = {
   info: {
     title: "famFolio Docs",
-    description: "API documentation for CSE341",
+    description: "API documentation for kyberData",
   },
-  host: "https://famfolioapi.onrender.com",
-  schemes: ["https"], // Using "http" for local development
+  host: "http://localhost:8080",
+  schemes: ["http"], // Using "http" for local development
 };
 
 const outputFile = "./swagger.json";
