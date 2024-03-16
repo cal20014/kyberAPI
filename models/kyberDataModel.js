@@ -14,6 +14,10 @@ const kyberDataSchema = new mongoose.Schema({
   kybers: [kyberSchema],
 });
 
-const KyberData = mongoose.model("KyberData", kyberDataSchema);
+const KyberData = mongoose.model(
+  "KyberData",
+  kyberDataSchema,
+  "kyber_data_collection"
+);
 
 module.exports = KyberData;

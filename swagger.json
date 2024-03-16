@@ -5,7 +5,7 @@
     "description": "API documentation for kyberData",
     "version": "1.0.0"
   },
-  "host": "http://localhost:8080",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
     "http"

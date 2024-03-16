@@ -5,7 +5,7 @@ const doc = {
     title: "kyberAPI Docs",
     description: "API documentation for kyberData",
   },
-  host: "http://localhost:8080",
+  host: "localhost:8080",
   schemes: ["http"], // Using "http" for local development
 };
 
