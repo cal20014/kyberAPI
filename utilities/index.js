@@ -1,6 +1,6 @@
 // const { validationResult } = require("express-validator");
 
-// const utilities = {};
+const utilities = {};
 
 // // Middleware for error handling
 // utilities.handleValidationErrors = (req, res, next) => {
@@ -11,12 +11,12 @@
 //   next();
 // };
 
-// /* ****************************************
-//  * Middleware For Handling Errors
-//  * Wrap other function in this for
-//  * General Error Handling
-//  **************************************** */
-// utilities.handleErrors = (fn) => (req, res, next) =>
-//   Promise.resolve(fn(req, res, next)).catch(next);
+/* ****************************************
+ * Middleware For Handling Errors
+ * Wrap other function in this for
+ * General Error Handling
+ **************************************** */
+utilities.handleErrors = (fn) => (req, res, next) =>
+  Promise.resolve(fn(req, res, next)).catch(next);
 
-// module.exports = utilities;
+module.exports = utilities;
