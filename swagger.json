@@ -22,6 +22,14 @@
             "description": "Internal Server Error"
           }
         }
+      },
+      "post": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
       }
     },
     "/kyberData/{id}": {
@@ -44,6 +52,22 @@
           },
           "500": {
             "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
           }
         }
       }
